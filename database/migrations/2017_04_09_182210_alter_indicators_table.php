@@ -14,10 +14,9 @@ class AlterIndicatorsTable extends Migration
     {
         Schema::table('indicators', function (Blueprint $table) {
 			
-            $table->integer('functs_id')->unsigned();
-            $table->foreign('functs_id')->references('id')->on('functs');
+            $table->integer('funct_id')->unsigned();
+            $table->foreign('funct_id')->references('id')->on('functs');
         });
-        
     }
 
     /**
@@ -29,8 +28,8 @@ class AlterIndicatorsTable extends Migration
     {
 		Schema::table('indicators', function (Blueprint $table) {
 			
-			$table->dropForeign('indicators_functs_id_foreign');
-			$table->dropColumn('functs_id');
+			$table->dropForeign('indicators_funct_id_foreign');
+			$table->dropColumn('funct_id');
 		});
     }
 }

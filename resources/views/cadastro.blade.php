@@ -39,7 +39,7 @@
 
 							<div class="form-group">
 								<label for="function">Function:</label>
-								<select id="function" name="funcion" class="form-control" >
+								<select id="function" name="function" class="form-control" >
 									<option value="null">Select a function</option>
 									@foreach( App\Models\Funct::all() as $function )
 										<option value="{{ $function->id }}">{{ $function->name }}</option>
