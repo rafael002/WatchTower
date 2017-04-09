@@ -10,7 +10,7 @@ use App\Models\Indicator;
 class IndicatorController extends Controller
 {
 	// return register view
-    public function register (){
+    public function register(){
 		return view('cadastro');
 	}
 	
@@ -40,5 +40,6 @@ class IndicatorController extends Controller
 		$indicators = Indicator::orderBy('indicators.givenName','desc')->paginate(10);
 		
 		return view('listIndicator')->with( 'indicators',  $indicators );
+		
 	}
 }
