@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/indicators/new/', 'IndicatorController@register');
+
+Route::post('/indicators/new/save/', 'IndicatorController@save');
