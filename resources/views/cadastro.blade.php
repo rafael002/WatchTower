@@ -36,6 +36,18 @@
 								<input type="text" id="lastName" name="lastName" class="form-control observed" placeholder="Sobrenome">
 							</div>
 
+
+							<div class="form-group">
+								<label for="function">Function:</label>
+								<select id="function" name="funcion" class="form-control" >
+									<option value="null">Select a function</option>
+									@foreach( App\Models\Funct::all() as $function )
+										<option value="{{ $function->id }}">{{ $function->name }}</option>
+									@endforeach
+								</select>
+							</div>
+
+
 							<div class="form-group">
 								<label for="email">E-Mail:</label>
 								<input type="text" id="email" name="email" class="form-control observed" placeholder="E-Mail">

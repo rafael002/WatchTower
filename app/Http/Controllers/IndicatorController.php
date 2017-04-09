@@ -26,7 +26,19 @@ class IndicatorController extends Controller
 		$indicator->telephone = $request->get('telephone');
 		$indicator->cellphone = $request->get('cellphone');
 		
+		$indicator->funct_id = $request->get('function');
+		
 		$indicator->save();
 		
+	}
+	
+	//list
+	//get data from database and list in blade listIndicator
+	
+	public function listIndicator(){
+		
+		$indicators = Indicator::orderBy('indicators.givenName','desc')->paginate(10);
+		
+		return view('listIndicator')->with( 'indicators',  $indicators );
 	}
 }

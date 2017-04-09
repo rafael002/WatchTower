@@ -19,6 +19,10 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/indicators/new/', 'IndicatorController@register');
+//INDICATOR
 
-Route::post('/indicators/new/save/', 'IndicatorController@save');
+Route::get( '/indicators/new/', 'IndicatorController@register' );
+
+Route::post( '/indicators/new/save/', 'IndicatorController@save' );
+
+Route::get( '/indicators/list/', 'IndicatorController@listIndicator' );
