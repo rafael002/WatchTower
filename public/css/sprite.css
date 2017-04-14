@@ -1,0 +1,17 @@
+/* CSS SPRITE RAFAEL */
+
+.jw-tower{
+	background: url('../jw_sprite.png') no-repeat;
+}
+
+.tower{
+	background-position: 0 0;
+}
+
+.tower-hover{
+	background-position: 0 0;
+}
+
+.tower-clicked{
+	background-position: 0 0;
+}

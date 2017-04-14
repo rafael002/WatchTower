@@ -32,6 +32,7 @@ class CongregationController extends Controller
 		
 	}
 	
+	
 	// retrives a 
 	public function update( Request $request ){
 		return view();

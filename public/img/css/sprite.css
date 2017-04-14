@@ -1,0 +1,79 @@
+/* CSS SPRITE RAFAEL002 */
+
+.jw{
+	position:absolute;
+	background: url('../img/sprite.png') no-repeat;
+	height:32px;
+	width:32px;
+}
+
+/*
+ * ICON SIZE
+ * */
+
+.jw-bg{
+	zoom:2;
+	-moz-transform:scale(2);
+	-moz-transform-origin: 0 0;
+}
+
+.jw-md{
+	zoom:1.5;
+	-moz-transform:scale(1.5);
+	-moz-transform-origin: 0 0;
+}
+
+.jw-sm{
+	zoom:0.5;
+	-moz-transform:scale(0.5);
+	-moz-transform-origin: 0 0;
+}
+
+/*
+ *  FOR BUTTONS ADD CLASS "jw-icon-button" 
+ */
+
+.jw-button:hover{
+	background-position-x: -32px;
+}
+
+.jw-button:active{
+	background-position-x: -64px;
+}
+
+/*
+ *  NORMAL ICONS
+ * */
+
+.tower{ background-position: 0px 0px; }
+
+.bible{ background-position: 0px -32px; }
+
+.publications{ background-position: 0px -64px; }
+
+.calendar{ background-position: 0px -96px; }
+
+.config{ background-position: 0px -128px; }
+
+.change{ background-position: 0px -160px; }
+
+.order-asc{ background-position: 0px -192px; }
+
+.order-dec{ background-position: 0px -224px; }
+
+.arrow-down{ background-position: 0px -256px; }
+
+.arrow-up{ background-position: 0px -288px; }
+
+.tag { background-position: 0px -320px; }
+
+.archive { background-position: 0px -352px; }
+
+.menu { background-position: 0px -384px; }
+
+.magnifier { background-position: 0px -416px; }
+
+.delete { background-position: 0px -448px; }
+
+.language { background-position: 0px -480px; }
+
