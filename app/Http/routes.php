@@ -26,3 +26,31 @@ Route::get( '/indicators/new/', 'IndicatorController@register' );
 Route::post( '/indicators/new/save/', 'IndicatorController@save' );
 
 Route::get( '/indicators/list/', 'IndicatorController@listIndicator' );
+
+//Route::get( '/indicators/update/', 'IndicatorController@update');
+
+// ACTIVITY
+
+Route::post('/activity/create/', 'ActivityController@create');
+
+Route::get('/activity/delete/', 'ActivityController@delete');
+
+Route::get('/activity/update/', 'ActivityController@update');
+
+// MEETING
+
+Route::post('/meeting/create/', 'MeetingController@create');
+
+Route::get('/meeting/delete/', 'MeetingController@delete');
+
+Route::get('/meeting/update/', 'MeetingController@update');
+
+
+// CONGREGATION
+
+Route::post('/congregation/create/', 'CongregationController@create');
+
+Route::get('/congregation/delete/', 'CongregationController@delete');
+
+Route::get('/congregation/update/', 'CongregationController@update');
+
